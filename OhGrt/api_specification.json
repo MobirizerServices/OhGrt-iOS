@@ -1,0 +1,554 @@
+[
+  {
+    "API": "/firebase/firebase-login",
+    "Method": "POST",
+    "Request body": {
+      "id_token": "string"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/firebase/token/refresh",
+    "Method": "POST",
+    "Request body": {
+      "refresh_token": "string"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/firebase/send-user-notification/",
+    "Method": "POST",
+    "Request body": {
+      "uid": "string",
+      "topic": "string",
+      "title": "string",
+      "body": "string"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/firebase/update-fcm-token",
+    "Method": "POST",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/users/profile",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {}
+  },
+  {
+    "API": "/users/users",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/users/profile/update",
+    "Method": "PUT",
+    "Request body": {
+      "name": "string",
+      "email": "string",
+      "date_of_birth": "string",
+      "occupation": "string",
+      "language": "string",
+      "profile_image": "string"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/users/profile/upload-image",
+    "Method": "POST",
+    "Request body": {
+      "file": "binary"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/subscription/subscriptions",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {}
+  },
+  {
+    "API": "/subscription/create-subscription",
+    "Method": "POST",
+    "Request body": {
+      "plan_name": "string",
+      "points": 0,
+      "price": 0,
+      "is_active": true
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/points/points",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {}
+  },
+  {
+    "API": "/points/points-summary",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {}
+  },
+  {
+    "API": "/story/generate-story",
+    "Method": "POST",
+    "Request body": {
+      "prompt": "string",
+      "language": "English",
+      "scene_count": 0
+    },
+    "Successful Response": {
+      "title": "string",
+      "scenes": [
+        {
+          "scene_number": 0,
+          "image_prompt": "string",
+          "text_to_audio": "string"
+        }
+      ]
+    },
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/image/generate-image",
+    "Method": "POST",
+    "Request body": {
+      "prompt": "string",
+      "negative_prompt": "",
+      "image_size": {
+        "height": 0,
+        "width": 0
+      },
+      "num_inference_steps": 18,
+      "guidance_scale": 5,
+      "num_images": 1,
+      "enable_safety_checker": true,
+      "output_format": "jpeg",
+      "style_name": "(No style)"
+    },
+    "Successful Response": {
+      "message": "string",
+      "image_url": "string"
+    },
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/audio/generate-audio",
+    "Method": "POST",
+    "Request body": {
+      "prompt": "string",
+      "audio_voice": "af_sarah",
+      "lang_code": "en"
+    },
+    "Successful Response": {
+      "message": "string",
+      "file": "string"
+    },
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/audio/queue-position/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/audio/job-status/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/audio/voice-catalog",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {}
+  },
+  {
+    "API": "/audio/audio-progress/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video/render-final-video",
+    "Method": "POST",
+    "Request body": {
+      "job_id": "string"
+    },
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video/start-video-job",
+    "Method": "POST",
+    "Request body": {
+      "title": "string",
+      "scenes": [
+        {
+          "scene_number": 0,
+          "image_prompt": "string",
+          "image_url": "string",
+          "audio_url": "string",
+          "text_to_display": "string",
+          "animation": {
+            "type": "zoom_in",
+            "start_scale": 1,
+            "end_scale": 1.2
+          }
+        }
+      ],
+      "width": 1080,
+      "height": 1920
+    },
+    "Successful Response": {
+      "job_id": "string",
+      "message": "string"
+    },
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video/job-status/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video/download/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video-job/full-process",
+    "Method": "POST",
+    "Request body": {
+      "title": "string",
+      "scenes": [
+        {
+          "scene_number": 0,
+          "image_prompt": "string",
+          "image_url": "string",
+          "audio_url": "string",
+          "text_to_display": "string",
+          "animation": {
+            "type": "zoom_in",
+            "start_scale": 1,
+            "end_scale": 1.2
+          }
+        }
+      ],
+      "width": 1080,
+      "height": 1920
+    },
+    "Successful Response": {
+      "job_id": "string",
+      "message": "string"
+    },
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video-job/video_processing_status/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video-job/status/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video-job/progress/{job_id}",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  {
+    "API": "/video-job/video-projects",
+    "Method": "GET",
+    "Request body": {},
+    "Successful Response": {},
+    "Validation Error": {
+      "detail": [
+        {
+          "loc": [
+            "string",
+            0
+          ],
+          "msg": "string",
+          "type": "string"
+        }
+      ]
+    }
+  }
+]
